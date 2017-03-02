@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RollDice"
+             x:Class="RollDice.MainPage">
+<ContentPage.Content>
+  
+  <StackLayout Orientation="Vertical">
+    
+    <StackLayout Orientation="Horizontal">
+      <Label FontSize="24" HorizontalOptions="Start">rolled:</Label>
+      <Label x:Name="lblRolled" FontSize="24">0</Label>
+      <Button x:Name="HistoryButton" Clicked="Button_OnClicked" Text="History" Margin="150,10,10,0"></Button>
+    </StackLayout>
+    
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+      <Image x:Name="MainImage"></Image>
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal" VerticalOptions="End">
+      <Button x:Name="RollButton" Clicked="RollButton_OnClicked" Text="Roll" Margin="10,0,00,10"></Button>  
+      <Button x:Name="btnMinus" Clicked="BtnMinus_OnClicked" Text="-" Margin="10,0,00,10" ></Button>
+      <Label x:Name="lblDiceNumber" Margin="0,0,00,10" FontSize="24">1</Label>
+      <Button x:Name="btnPlus" Clicked="BtnPlus_OnClicked" Text="+" Margin="0,0,00,10"></Button>
+    </StackLayout >
+  
+  </StackLayout>
+  
+</ContentPage.Content>
+</ContentPage>
